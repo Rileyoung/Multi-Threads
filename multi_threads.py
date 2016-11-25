@@ -6,6 +6,7 @@
 #
 #-*- coding: utf-8 -*-  
 #!/usr/bin/python   
+
 import paramiko  
 import threading  
 import os
@@ -24,8 +25,6 @@ def ssh2(ip,username,passwd,cmd):
         ssh.close()  
     except :  
         print '%s\tError\n'%(ip) 
-
-#def enter():
 
 if __name__=='__main__':  
     cmd = ['cal','echo hello!','os.chdir(r'/root/test') ','ls']  
